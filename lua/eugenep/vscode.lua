@@ -85,6 +85,9 @@ keymap('n', '[d', vscode_action('editor.action.marker.prevInFiles'), { desc = 'P
 keymap('n', ']d', vscode_action('editor.action.marker.nextInFiles'), { desc = 'Next diagnostic' })
 keymap('n', '<leader>ql', vscode_action('workbench.actions.view.problems'), { desc = 'Problems' })
 
+-- Document symbols (aligned with Telescope)
+keymap('n', '<leader>ds', vscode_action('workbench.action.gotoSymbol'), { desc = '[D]ocument [S]ymbols' })
+
 -- Code folding
 keymap('n', 'za', vscode_action('editor.toggleFold'), { desc = 'Toggle fold' })
 keymap('n', 'zc', vscode_action('editor.fold'), { desc = 'Close fold' })
